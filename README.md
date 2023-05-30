@@ -1,6 +1,6 @@
-# Programacao Web I 1°TADS-2023
+# Programacao Web I - 1°TADS | 2023
 
-Repositório para a matéria de Programação Web I - 2023
+Repositório para a matéria de Programação Web I - 1°TADS | 2023.
 
 **Links úteis:**
 - [Git](https://git-scm.com/);
