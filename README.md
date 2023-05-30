@@ -8,7 +8,7 @@ Repositório para a matéria de Programação Web I - 2023
 - [Hostinger](https://www.hostinger.com.br/tutoriais/tutorial-do-git-basics-introducao);
 - [Github-Markdown-tutorial](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README.md);
 - [Developer.Mozzila](https://developer.mozilla.org/pt-BR/docs/Web/HTML);
-- [W3schools]((https://www.w3schools.com/html/default.asp);
+- [W3schools](https://www.w3schools.com/html/default.asp);
 - [Colorhunt](https://colorhunt.co/).
 
 ## IFPR
