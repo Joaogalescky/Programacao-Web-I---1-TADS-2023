@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios JavaScript</title>
+</head>
+<body>
+    <h1>Remover Elemento de um Vetor</h1>
+    <input type="number" id="numero" placeholder="Insira um número">
+    <button id="adicionar">Adicionar Número</button>
+    <input type="number" id="remover" placeholder="Número para remover">
+    <button id="removerBotao">Remover Número</button>
+    <p id="vetor">Vetor: </p>
+
+    <script>
+        const numeros = [];
+        const vetorElement = document.getElementById("vetor");
+
+        document.getElementById("adicionar").addEventListener("click", function() {
+            const numero = parseFloat(document.getElementById("numero").value);
+            if (!isNaN(numero)) {
+                numeros.push(numero);
+                vetorElement.textContent = "Vetor: " + numeros.join(", ");
+                document.getElementById("numero").value = "";
+            }
+        });
+
+        document.getElementById("removerBotao").addEventListener("click", function() {
+            const numeroRemover = parseFloat(document.getElementById("remover").value);
+            if (!isNaN(numeroRemover)) {
+                const indice = numeros.indexOf(numeroRemover);
+                if (indice !== -1) {
+                    numeros.splice(indice, 1);
+                    vetorElement.textContent = "Vetor: " + numeros.join(", ");
+                    document.getElementById("remover").value = "";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

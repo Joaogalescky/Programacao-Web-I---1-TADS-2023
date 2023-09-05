@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios JavaScript</title>
+</head>
+<body>
+    <h1>Encontre o Maior Valor</h1>
+    <input type="number" id="numero" placeholder="Insira um número">
+    <button id="encontrar">Encontrar Maior Valor</button>
+    <p id="maior">Maior valor: </p>
+
+    <script>
+        const numeros = [];
+        const maiorElement = document.getElementById("maior");
+
+        document.getElementById("encontrar").addEventListener("click", function() {
+            const numero = parseFloat(document.getElementById("numero").value);
+            if (!isNaN(numero)) {
+                numeros.push(numero);
+                document.getElementById("numero").value = "";
+                const maior = encontrarMaiorValor(numeros);
+                maiorElement.textContent = "Maior valor: " + maior;
+            }
+        });
+
+        function encontrarMaiorValor(array) {
+            if (array.length === 0) return "Nenhum valor inserido.";
+            return Math.max(...array);
+        }
+    </script>
+</body>
+</html>

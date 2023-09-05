@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios JavaScript</title>
+    <style>
+        .colorido {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplicação de Estilo CSS</h1>
+    <button id="mudarCor">Mudar Cor</button>
+    <div class="colorido" id="elementoColorido"></div>
+
+    <script>
+        const cores = ["red", "green", "blue", "yellow", "purple", "orange"];
+        const elementoColorido = document.getElementById("elementoColorido");
+
+        document.getElementById("mudarCor").addEventListener("click", function() {
+            const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+            elementoColorido.style.backgroundColor = corAleatoria;
+        });
+    </script>
+</body>
+</html>

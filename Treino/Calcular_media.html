@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios JavaScript</title>
+</head>
+<body>
+    <h1>Calculadora de Média</h1>
+    <input type="number" id="nota" placeholder="Insira uma nota">
+    <button id="adicionar">Adicionar Nota</button>
+    <p id="notas">Notas inseridas: </p>
+    <p id="media">Média: </p>
+
+    <script>
+        const notas = [];
+        const notasElement = document.getElementById("notas");
+        const mediaElement = document.getElementById("media");
+
+        document.getElementById("adicionar").addEventListener("click", function() {
+            const nota = parseFloat(document.getElementById("nota").value);
+            if (!isNaN(nota)) {
+                notas.push(nota);
+                notasElement.textContent += nota + " ";
+                document.getElementById("nota").value = "";
+                const media = calcularMedia(notas);
+                mediaElement.textContent = "Média: " + media.toFixed(2);
+            }
+        });
+
+        function calcularMedia(array) {
+            if (array.length === 0) return 0;
+            const soma = array.reduce((total, valor) => total + valor, 0);
+            return soma / array.length;
+        }
+    </script>
+</body>
+</html>

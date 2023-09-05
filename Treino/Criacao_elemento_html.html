@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios JavaScript</title>
+</head>
+<body>
+    <h1>Criação de Elementos HTML</h1>
+    <button id="criarElemento">Criar Parágrafo</button>
+    <div id="conteudo"></div>
+
+    <script>
+        document.getElementById("criarElemento").addEventListener("click", function() {
+            const novoParagrafo = document.createElement("p");
+            novoParagrafo.textContent = "Este é um novo parágrafo criado com JavaScript.";
+            document.getElementById("conteudo").appendChild(novoParagrafo);
+        });
+    </script>
+</body>
+</html>
