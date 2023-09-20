@@ -25,15 +25,36 @@ frm.addEventListener("submit", (e) => {
 
 document.getElementById("btnRemover").addEventListener("click", function() {
         let numero = Number(frm.inTarefa.value);
-        let index = vetor.indexOf(numero);
+        // let index = vetor.indexOf(numero); // para remover de 1 em 1
+        let indices = []; //para remover todos os elementos em comum
 
-        if(index !== -1){
-            vetor.splice(index, 1);
-            let resposta = vetor.join("\n");
-            resp.innerText = resposta;
-        } else {
+        //Encontrar os índices no vetor
+        for(let i = 0; i < vetor.length; i++){
+            if (vetor[i] === numero){
+                indices.push(i);
+            }
+        }
+
+        //Remover elementos pelos índices encontrados
+        for(let i = indices.length - 1; i >= 0; i--){
+            vetor.splice(indices[i], 1);
+        }
+
+        if(indices.length === 0){
             alert("Não consta na lista!");
         }
+
+        let resposta = vetor.join("\n");
+        resp.innerText = resposta;
+        
+        //para remover de 1 em 1
+        // if(index !== -1){ 
+        //     vetor.splice(index, 1);
+        //     let resposta = vetor.join("\n");
+        //     resp.innerText = resposta;
+        // } else {
+        //     alert("Não consta na lista!");
+        // }
     frm.inTarefa.value = "";
     });
 
