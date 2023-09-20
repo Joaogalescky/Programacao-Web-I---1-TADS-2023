@@ -6,43 +6,36 @@ frm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     let numero = Number(frm.inTarefa.value)
-    vetor.push(numero);
 
-    let resposta = "";
-
-    for(let i = 0; i < vetor.length; i++){
-        vetor.sort((a, b) => a - b);
-        resposta += `${vetor[i]}` + "\n";
+    if(numero >= 0 && numero <= 100){
+        vetor.push(numero);
+    
+        let resposta = "";
+    
+        for(let i = 0; i < vetor.length; i++){
+            vetor.sort((a, b) => a - b);
+            resposta += `${vetor[i]}` + "\n";
+        }
+        resp.innerText = resposta;
+    } else {
+        alert("Por favor, insira um número entre 0 e 100.");
     }
-
-    //Fazer um limite para a entrada no vetor
-    //Fzer um alerta para caso tentar ultrapassar o limite
-
-    resp.innerText = resposta;
+    frm.inTarefa.value = "";
 });
 
-document.addEventListener("button", function() {
-    button.type = 'button';
-    button.innerHTML = 'Remover';
-    button.className = 'btn-styled';
- 
-    button.onclick = function() {
+document.getElementById("btnRemover").addEventListener("click", function() {
         let numero = Number(frm.inTarefa.value);
-        let remover = vetor.indexOf(numero);
+        let index = vetor.indexOf(numero);
 
-        while(remover >= 0){
-            vetor.splice(remover, 0);
-            remover = vetor.indexOf(numero);
+        if(index !== -1){
+            vetor.splice(index, 1);
+            let resposta = vetor.join("\n");
+            resp.innerText = resposta;
+        } else {
+            alert("Não consta na lista!");
         }
-        if (vetor.length == 0){
-            alert("Não consta na lista")
-            frm.inTarefa.focus();
-            return
-        }
-    };
-    var container = document.getElementById('container');
-    container.appendChild(button);
-}, false);
+    frm.inTarefa.value = "";
+    });
 
 //Links
 //https://blog.dbins.com.br/remover-elementos-de-um-array-com-javascript
