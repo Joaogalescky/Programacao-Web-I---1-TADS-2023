@@ -11,9 +11,8 @@ frm.addEventListener("submit", (e) => {
     let resposta = "";
 
     for(let i = 0; i < vetor.length; i++){
-        vetor.sort();
+        vetor.sort((a, b) => a - b);
         resposta += `${vetor[i]}` + "\n";
     }
-
     resp.innerText = resposta;
 });
