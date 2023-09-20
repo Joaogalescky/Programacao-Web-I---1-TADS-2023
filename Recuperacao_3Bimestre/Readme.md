@@ -1,6 +1,6 @@
 # Avaliação - Recuperação prática - Programação Web - 1°TADS | 2023
 
-Repositório para a recuperação de prova prática da matéria de Programação Web - 1° TADS | 2023. 
+Repositório para a recuperação de prova prática (corrigido) da matéria de Programação Web - 1° TADS | 2023. 
 
 ## IFPR
 
