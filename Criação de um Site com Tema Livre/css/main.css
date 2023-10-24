@@ -1,0 +1,26 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: grey;
+    height: 60px;
+}
+
+main {
+    margin: 0 auto;
+    width: 980px;
+    float: left;
+    position: relative;
+}
+
+.logo {
+    padding: 15px;
+    object-fit: fill;
+}
+
+.redes-sociais ul li {
+    
+}
