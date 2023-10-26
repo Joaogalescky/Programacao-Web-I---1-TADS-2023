@@ -26,5 +26,8 @@ Pasta para trabalho do 4°Bimestre da matéria de Programação Web - 1° TADS |
 Written with [StackEdit](https://stackedit.io/).
 
 Sites usados:
-* https://figma.com/
-* https://nicepage.com/
+* https://figma.com
+* https://templatemo.com/
+
+Link do template utilizado:
+* https://templatemo.com/tm-577-liberty-market 
