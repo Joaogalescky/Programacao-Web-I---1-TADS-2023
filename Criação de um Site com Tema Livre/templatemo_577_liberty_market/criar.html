@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="templatemo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Program ASK - Página de Criação de Plano</title>
 
-  <head>
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <meta charset="utf-8">
-    <meta name="author" content="templatemo">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-    <title>Liberty Template - Create NFT Page</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
-
-TemplateMo 577 Liberty Market
-
-https://templatemo.com/tm-577-liberty-market
-
--->
-  </head>
-
+  <!-- Arquivos CSS Adicionais -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <!-- TemplateMo 577 Liberty Market - https://templatemo.com/tm-577-liberty-market -->
+</head>
 <body>
 
-  <!-- ***** Preloader Start ***** -->
+  <!-- Pré carregamento Start -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -43,51 +31,51 @@ https://templatemo.com/tm-577-liberty-market
       </div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
+  <!-- Pré carregamento End -->
 
-  <!-- ***** Header Area Start ***** -->
+  <!-- Header Start -->
   <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
+                    <!-- Logo Start -->
                     <a href="index.html" class="logo">
                         <img src="assets/images/logo.png" alt="">
                     </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
+                    <!-- Logo End -->
+                    <!-- Menu Start -->
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="explore.html">Explore</a></li>
-                        <li><a href="details.html">Item Details</a></li>
-                        <li><a href="author.html">Author</a></li>
-                        <li><a href="create.html" class="active">Create Yours</a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="explorar.html">Explorar Planos</a></li>
+                      <li><a href="detalhes.html">Detalhes</a></li>
+                      <li><a href="autor.html" class="active">Perfil</a></li>
+                      <li><a href="criar.html">Criar Plano</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
-                    <!-- ***** Menu End ***** -->
+                    <!-- Menu End -->
                 </nav>
             </div>
         </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
+  <!-- Header End -->
 
   <div class="page-heading normal-space">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h6>Liberty NFT Market</h6>
-          <h2>Create Your NFT Now.</h2>
-          <span>Home > <a href="#">Create Yours</a></span>
+          <h6>Program ASK</h6>
+          <h2>Crie o Seu Plano.</h2>
+          <span>Home > <a href="#">Crie o Seu</a></span>
           <div class="buttons">
             <div class="main-button">
-              <a href="explore.html">Explore Our Items</a>
+              <a href="explorar.html">Explorar Planos Existentes</a>
             </div>
             <div class="border-button">
-              <a href="create.html">Create Your NFT</a>
+              <a href="criar.html">Criar o Seu Plano</a>
             </div>
           </div>
         </div>
@@ -101,91 +89,49 @@ https://templatemo.com/tm-577-liberty-market
         <div class="col-lg-12">
           <div class="section-heading">
             <div class="line-dec"></div>
-            <h2>Apply For <em>Your Item</em> Here.</h2>
+            <h2>Envie <em>Seu </em> Projeto.</h2>
           </div>
         </div>
         <div class="col-lg-12">
           <form id="contact" action="" method="post">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-6">
                 <fieldset>
-                  <label for="title">Item Title</label>
-                  <input type="title" name="title" id="title" placeholder="Ex. Lyon King" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-4">
-                <fieldset>
-                  <label for="description">Description For Item</label>
-                  <input type="description" name="description" id="description" placeholder="Give us your idea" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-4">
-                <fieldset>
-                  <label for="username">Your Username</label>
-                  <input type="username" name="username" id="username" placeholder="Ex. @alansmithee" autocomplete="on" required>
+                  <label for="title">Título</label>
+                  <input type="title" name="title" id="title" placeholder="Nome do projeto" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <label for="price">Price Of Item</label>
-                  <input type="price" name="price" id="price" placeholder="Price depends on quality. Ex. 0.06 ETH" autocomplete="on" required>
+                  <label for="description">Descrição do Projeto</label>
+                  <input type="description" name="description" id="description" placeholder="Características" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <label for="royalities">Royalties</label>
-                  <input type="royalities" name="royalities" id="royalities" placeholder="Common royalties 1-25%" autocomplete="on" required>
+                  <label for="username">Nome</label>
+                  <input type="username" name="username" id="username" placeholder="Nome completo" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="e-mail">E-mail</label>
+                  <input type="e-mail" name="e-mail" id="e-mail" placeholder="E-mail para contato" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-4">
                 <fieldset>
-                  <label for="file">Your File</label>
+                  <label for="file">Arquivo</label>
                   <input type="file" id="file" name="myfiles[]" multiple />
                 </fieldset>
               </div>
               <div class="col-lg-8">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Submit Your Applying</button>
+                  <button type="submit" id="form-submit" class="orange-button">Enviar Projeto</button>
                 </fieldset>
               </div>
             </div>
           </form>
-        </div>
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <div class="line-dec"></div>
-            <h2>This Is <em>Your Item</em> Preview.</h2>
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="left-image">
-            <img src="assets/images/create-yours.jpg" alt="" style="border-radius: 20px;">
-          </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <h4>Dolores Haze Westworld Eye</h4>
-          <span class="author">
-            <img src="assets/images/author-02.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-            <h6>Kataleya Smithee<br><a href="#">@kataleey</a></h6>
-          </span>
-          <p>Lorem ipsum dolor sit amet, consectetu dipiscingei elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="row">
-            <div class="col-3">
-              <span class="bid">
-                Current Bid<br><strong>0.06 ETH</strong><br><em>($8055,35)</em>
-              </span>
-            </div>
-            <div class="col-4">
-              <span class="owner">
-                Owner<br><strong>Alan Smithee</strong><br><em>(@asmithee)</em>
-              </span>
-            </div>
-            <div class="col-5">
-              <span class="ends">
-                Ends In<br><strong>3D 05H 20M 58S</strong><br><em>(January 22nd, 2021)</em>
-              </span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -195,9 +141,8 @@ https://templatemo.com/tm-577-liberty-market
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2022 <a href="#">Liberty</a> NFT Marketplace Co., Ltd. All rights reserved.
-          &nbsp;&nbsp;
-          Designed by <a title="HTML CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+          <p>Copyright © 2022 <a href="#">Liberty</a> NFT Marketplace Co., Ltd. All rights reserved. &nbsp;&nbsp;</p>
+          <p>Designed by <a title="HTML CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a> and Modified by <a title="Github User" rel="sponsored" href="https://github.com/Joaogalescky" target="_blank">@Joaogalescky</a></p>
         </div>
       </div>
     </div>
