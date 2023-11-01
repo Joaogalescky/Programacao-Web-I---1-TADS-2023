@@ -223,7 +223,7 @@ section {
   border-radius: 35px;
   outline: none;
   margin: 12px 0;
-  overflow: hidden
+/*Estilizar para evitar que fique grande*/
 }
 
 /* ---- Pré carregamento da Estilização ---- */

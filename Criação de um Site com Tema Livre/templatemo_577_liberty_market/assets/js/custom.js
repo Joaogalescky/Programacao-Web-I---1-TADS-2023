@@ -159,7 +159,7 @@
 	$(document).ready(function () {
 	    $(document).on("scroll", onScroll);
 	    
-	    //smoothscroll
+	    // Smoothscroll
 	    $('.scroll-to-section a[href^="#"]').on('click', function (e) {
 	        e.preventDefault();
 	        $(document).off("scroll");
@@ -250,7 +250,7 @@
         });
     }
 
-	//função da barra de pesquisa
+	// Função da barra de pesquisa
 	function search(){
 		let input = document.querySelector('searchbar').value
 		input = input.toLowerCase()
@@ -263,5 +263,6 @@
 				x[i].style.display = "list-item"
 			}	
 		}
+	//Tornar funcional para pesquisar os elementos e textos do site
 	}
 })(window.jQuery);
