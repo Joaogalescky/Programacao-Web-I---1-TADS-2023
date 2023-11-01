@@ -1,14 +1,8 @@
-/*
-
-TemplateMo 577 Liberty Market
-
+/* TemplateMo 577 Liberty Market
 https://templatemo.com/tm-577-liberty-market
-
 */
 
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
+/* ---- Table of contents ----
 01. font & reset css
 02. reset
 03. global styles
@@ -18,19 +12,14 @@ Table of contents
 07. testimonials
 08. contact
 09. footer
+----------------------------- */
 
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
---------------------------------------------- 
-*/
+/* ---- Font & reset css ---- */
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
-/* 
----------------------------------------------
-reset
---------------------------------------------- 
-*/
+
+/* ---- Reset ---- */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -112,11 +101,7 @@ img {
   overflow: hidden;
 }
 
-/* 
----------------------------------------------
-Global Styles
---------------------------------------------- 
-*/
+/* -- Estilização Global --- */
 html,
 body {
   background: #fff;
@@ -231,11 +216,17 @@ section {
   font-style: normal;
 }
 
-/* 
----------------------------------------------
-Pre-loader Style
---------------------------------------------- 
-*/
+/* ---- Barra de Pesquisa ---- */
+#searchbar{
+  width: 30vw; /*ou 45%*/
+  border: 1px solid gray;
+  border-radius: 35px;
+  outline: none;
+  margin: 12px 0;
+  overflow: hidden
+}
+
+/* ---- Pré carregamento da Estilização ---- */
 
 .js-preloader {
   position: fixed;
@@ -331,13 +322,7 @@ Pre-loader Style
   border-radius: 50%;
 }
 
-
-
-/* 
----------------------------------------------
-Header Style
---------------------------------------------- 
-*/
+/* ---- Header Estilização ---- */
 
 .background-header {
   background-color: #fff !important;
@@ -721,11 +706,7 @@ Header Style
   }
 }
 
-/* 
----------------------------------------------
-Banner Style
---------------------------------------------- 
-*/
+/* ---- Banner Estilização ---- */
 
 .main-banner {
   background-image: url(../images/banner-bg.jpg);
@@ -805,12 +786,7 @@ Banner Style
   opacity: 1;
 }
 
-
-/* 
----------------------------------------------
-Categories & Collections Style
---------------------------------------------- 
-*/
+/* ---- Categorias & Coleções Estilização ---- */
 
 .categories-collections {
   background-image: url(../images/dark-bg.jpg);
@@ -985,11 +961,7 @@ Categories & Collections Style
 }
 
 
-/* 
----------------------------------------------
-Create NFT Style
---------------------------------------------- 
-*/
+/* ---- Criar NFT Style ---- */
 
 .create-nft {
   background-image: url(../images/main-bg.jpg);
@@ -1079,13 +1051,7 @@ Create NFT Style
   color: #3CF;
 }
 
-
-
-/* 
----------------------------------------------
-Currently Market Style
---------------------------------------------- 
-*/
+/* ---- Currently Market Style ---- */
 
 .currently-market {
   background-image: url(../images/dark-bg.jpg);
@@ -1220,12 +1186,7 @@ Currently Market Style
 }
 
 
-
-/* 
----------------------------------------------
-Footer Style
---------------------------------------------- 
-*/
+/* ---- Footer Style ---- */
 
 footer {
   background: rgb(125,90,254);
@@ -1250,11 +1211,7 @@ footer p a:hover {
 }
 
 
-/* 
----------------------------------------------
-Page Heading Style
---------------------------------------------- 
-*/
+/* ---- Page Heading Style ---- */
 
 .normal-space {
   padding: 250px 0px 120px 0px !important;
@@ -1310,11 +1267,7 @@ Page Heading Style
 
 
 
-/* 
----------------------------------------------
-Explore Style
---------------------------------------------- 
-*/
+/* ---- Explore Style ---- */
 
 .featured-explore {
   margin-top: 60px;
@@ -1614,11 +1567,7 @@ Explore Style
 }
 
 
-/* 
----------------------------------------------
-Details Page Style
---------------------------------------------- 
-*/
+/* ---- Details Page Style ---- */
 
 .item-details-page {
   background-image: url(../images/dark-bg.jpg);
@@ -1848,13 +1797,9 @@ Details Page Style
 }
 
 
-/* 
----------------------------------------------
-Author Page Style
---------------------------------------------- 
-*/
+/* ---- Estilização da Página Perfil(Profile) --> Antes era Author ---- */
 
-.author-page {
+.profile-page {
   background-image: url(../images/dark-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1863,22 +1808,22 @@ Author Page Style
   position: relative;
 }
 
-.author-page .author {
+.profile-page .profile {
   display: flex;
 }
 
-.author-page .author h4 {
+.profile-page .profile h4 {
   margin-top: 60px;
   font-size: 20px;
   margin-left: 30px;
 }
 
-.author-page .author h4 a {
+.profile-page .profile h4 a {
   font-size: 15px;
   color: #7453fc;
 }
 
-.author-page .right-info {
+.profile-page .right-info {
   background-color: #282b2f;
   border: 1px solid #404245;
   padding: 20px 30px;
@@ -1886,78 +1831,78 @@ Author Page Style
   margin-left: 100px;
 }
 
-.author-page .right-info .info-item {
+.profile-page .right-info .info-item {
   margin-bottom: 20px;
 }
 
-.author-page .right-info i {
+.profile-page .right-info i {
   color: #7453fc;
   font-size: 22px;
 }
 
-.author-page .right-info h6 {
+.profile-page .right-info h6 {
   font-size: 20px;
   color: #7453fc;
   margin-top: 4px;
 }
 
-.author-page .right-info h6 em {
+.profile-page .right-info h6 em {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   color: #fff;
 }
 
-.author-page .right-info h5 {
+.profile-page .right-info h5 {
   font-size: 20px;
   color: #afafaf;
   margin-top: 10px;
 }
 
-.author-page .right-info .main-button a {
+.profile-page .right-info .main-button a {
   width: 100%;
   text-align: center;
 }
 
-.author-page .section-heading {
+.profile-page .section-heading {
   margin-top: 80px;
   text-align: left;
 }
 
-.author-page .section-heading .line-dec {
+.profile-page .section-heading .line-dec {
   margin-left: 0;
 }
 
-.author-page .item span.author {
+.profile-page .item span.profile {
   display: inline-flex;
   width: 100%;
 }
 
-.author-page .item span.author img {
+.profile-page .item span.profile img {
   margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 
-.author-page .item img {
+.profile-page .item img {
   margin-top: -32px;
   position: relative;
   z-index: 1;
 }
 
-.author-page .item h4 {
+.profile-page .item h4 {
   font-size: 20px;
   margin-top: 30px;
 }
 
-.author-page .item .line-dec {
+.profile-page .item .line-dec {
   width: 100%;
   height: 1px;
   background-color: rgba(255,255,255,0.2);
   margin: 30px 0px;
 }
 
-.author-page .item {
+.profile-page .item {
   background-color: #282b2f;
   border: 1px solid #404245;
   padding: 30px;
@@ -1966,32 +1911,28 @@ Author Page Style
   margin-bottom: 52px;
 }
 
-.author-page .item span {
+.profile-page .item span {
   color: #fff;
   display: inline-block;
   font-size: 15px;
 }
 
-.author-page .item span strong {
+.profile-page .item span strong {
   font-size: 20px;
 }
 
-.author-page .item span.category {
+.profile-page .item span.category {
   text-align: right;
 }
 
-.author-page .item .main-button {
+.profile-page .item .main-button {
   margin-top: 20px;
   margin-bottom: -60px;
   text-align: center;
 }
 
 
-/* 
----------------------------------------------
-Create Page Style
---------------------------------------------- 
-*/
+/* ---- Create Page Style ---- */
 
 #contact {
   background-color: #37393c;
@@ -2038,11 +1979,7 @@ Create Page Style
 
 
 
-/* 
----------------------------------------------
-Responsive Style
---------------------------------------------- 
-*/
+/* ---- Responsive Style ---- */
 
 body {
   overflow-x: hidden;
