@@ -219,11 +219,11 @@ section {
 /* ---- Barra de Pesquisa ---- */
 
 #searchbar{
-  width: 30vw; /*ou 45%*/
+  width: 25vw;
   border: 1px solid gray;
   border-radius: 35px;
   outline: none;
-  margin: 12px 0;
+  margin: 20px 0;
 /*Estilizar para evitar que fique grande ao mover o scroll*/
 }
 
