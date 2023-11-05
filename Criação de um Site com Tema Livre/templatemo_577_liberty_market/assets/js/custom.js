@@ -252,17 +252,46 @@
 
 	// Função da barra de pesquisa
 	function search(){
-		let input = document.querySelector('searchbar').value
-		input = input.toLowerCase()
-		let x = document.querySelectorAll('nav') //ou row
+		let input = document.querySelector('.searchText').value.toLowerCase();
+		let items = document.querySelectorAll('[data-searchable]');
 
-		for(let i = 0; i < x.length; i++){
-			if(!x[i].innerHTML.toLowerCase().includes(input)){
-				x[i].style.display = "none"
-			} else{
-				x[i].style.display = "list-item"
-			}	
-		}
-	//Tornar funcional para pesquisar os elementos e textos do site
+		items.forEach(item => {
+		if (!item.textContent.toLowerCase().includes(input)) {
+			item.style.display = "none";
+			} else {
+				item.style.display = "block"; // ou o estilo apropriado para torná-lo visível
+			}
+		});
 	}
+
+	//Formulário
+		function enviarFormulario(){
+			var form = document.getElementById("contact");
+
+			// Validação básica (adicione mais conforme necessário)
+			if (!form.title.value || !form.description.value || !form.username.value || !form.email.value) {
+			alert("Por favor, preencha todos os campos obrigatórios.")
+			return
+			}
+
+			// Dados a serem enviados
+			var formData = new FormData(form);
+
+			// Envio para o Formspree
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", "https://formspree.io/joaocvgalescky@gmail.com", true);
+			xhr.setRequestHeader("Accept", "application/json");
+
+			xhr.onreadystatechange = function () {
+				if(xhr.readyState == 4 && xhr.status == 200){
+					// Sucesso! Faça algo aqui, se necessário.
+					alert("Formulário enviado com sucesso!")
+				}else if (xhr.readyState == 4 && xhr.status != 200){
+					// Algum erro ocorreu durante o envio.
+					alert("Erro ao enviar o formulário. Tente novamente mais tarde.")
+				}
+			}
+			// Envie os dados do formulário
+			xhr.send(formData);
+		}
 })(window.jQuery);
