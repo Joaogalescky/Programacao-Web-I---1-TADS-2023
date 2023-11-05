@@ -46,7 +46,7 @@
                     <!-- Logo End -->
 
                     <!-- Menu Start -->
-                    <input id="searchbar" type="text" name="searchbar" placeholder="Pesquisar" onkeyup="search()">
+                    <input id="searchbar" type="text" name="searchbar" class="searchText" placeholder="Pesquisar" autocomplete="on" required onkeyup="search()">
                     <ul class="nav">
                       <li><a href="index.html">Home</a></li>
                       <li><a href="explorar.html">Explorar Planos</a></li>
@@ -70,11 +70,11 @@
       <div class="row">
         <div class="col-lg-12">
           <!-- <h6>Program ASK</h6> -->
-          <h2>Envie O Seu Projeto</h2>
+          <h2 data-searchable>Envie O Seu Projeto</h2>
           <span>Home > <a href="#">Crie o Seu</a></span>
           <div class="buttons">
             <div class="border-button">
-              <a href="explorar.html">Explorar Planos</a>
+              <a data-searchable href="explorar.html">Explorar Planos</a>
             </div>
           </div>
         </div>
@@ -88,34 +88,34 @@
         <div class="col-lg-12">
           <div class="section-heading">
             <div class="line-dec"></div>
-            <h2>Envie <em>Seu </em> Projeto.</h2>
+            <h2 data-searchable>Envie <em>Seu </em> Projeto.</h2>
           </div>
         </div>
         <div class="col-lg-12">
-          <form id="contact" action="" method="post">
+          <form id="contact" method="post">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
                   <label for="title">Título</label>
-                  <input type="title" name="title" id="title" placeholder="Nome do projeto" autocomplete="on" required>
+                  <input type="text" name="title" id="title" placeholder="Nome do projeto" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="description">Descrição do Projeto</label>
-                  <input type="description" name="description" id="description" placeholder="Características" autocomplete="on" required>
+                  <input type="text" name="description" id="description" placeholder="Características" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                   <label for="username">Nome</label>
-                  <input type="username" name="username" id="username" placeholder="Nome completo" autocomplete="on" required>
+                  <input type="text" name="username" id="username" placeholder="Nome completo" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
-                  <label for="e-mail">E-mail</label>
-                  <input type="e-mail" name="e-mail" id="e-mail" placeholder="E-mail para contato" autocomplete="on" required>
+                  <label for="email">E-mail</label>
+                  <input type="text" name="email" id="email" placeholder="E-mail para contato" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-4">
@@ -126,7 +126,7 @@
               </div>
               <div class="col-lg-8">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Enviar Projeto</button>
+                  <button type="submit" id="form-submit" class="orange-button" onclick="enviarFormulario()">Enviar Projeto</button>
                 </fieldset>
               </div>
             </div>
