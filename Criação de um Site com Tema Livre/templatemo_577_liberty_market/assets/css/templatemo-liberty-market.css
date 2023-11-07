@@ -232,6 +232,27 @@ section {
 }
 /*https://www.devmedia.com.br/html5-placeholder-como-estilizar/24589*/
 
+/* ---- Formulário de Envio ---- */
+
+form textarea{
+  padding: 10px;
+  outline: none;
+  border: 1;
+  font-size: 15px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+
+form textarea:focus{
+  border-radius: 15px;
+}
+
+/* ---- Agradecimentos ---- */
+
+.paragrafo{
+  margin-top: 15px;
+  font-size: 20px;
+}
 
 /* ---- Pré carregamento da Estilização ---- */
 
