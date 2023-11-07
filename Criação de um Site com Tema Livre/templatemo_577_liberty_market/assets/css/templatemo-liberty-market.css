@@ -247,11 +247,18 @@ form textarea:focus{
   border-radius: 15px;
 }
 
-/* ---- Agradecimentos ---- */
+/* ---- Página de Agradecimentos ---- */
 
 .paragrafo{
   margin-top: 15px;
   font-size: 20px;
+}
+
+/* ---- Página Sobre a Empresa ---- */
+
+.historia{
+  font-size: 18px;
+  text-align: justify;
 }
 
 /* ---- Pré carregamento da Estilização ---- */
