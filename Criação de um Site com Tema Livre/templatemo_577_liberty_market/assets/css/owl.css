@@ -1,11 +1,11 @@
-/**
+/** Copyright disclaimer
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
  */
-/*
- *  Owl Carousel - Core
- */
+
+/* ========== OWL CARROSSEL - CORE ========== */
+
 .owl-carousel {
   display: none;
   width: 100%;
@@ -97,9 +97,8 @@
 .no-js .owl-carousel {
   display: block; }
 
-/*
- *  Owl Carousel - Animate Plugin
- */
+/* ========== OWL CARROSSEL - ANIMAÇÃO PLUGIN ========== */
+
 .owl-carousel .animated {
   animation-duration: 1000ms;
   animation-fill-mode: both; }
@@ -119,15 +118,13 @@
   100% {
     opacity: 0; } }
 
-/*
- * 	Owl Carousel - Auto Height Plugin
- */
+/* ========== OWL CARROSSEL - ALTURA AUTOMÁTICA PLUGIN ========== */
+
 .owl-height {
   transition: height 500ms ease-in-out; }
 
-/*
- * 	Owl Carousel - Lazy Load Plugin
- */
+/* ========== OWL CARROSSEL - CARREGAMENTO LENTO PLUGIN ========== */
+
 .owl-carousel .owl-item {
   /**
 			This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
@@ -141,9 +138,8 @@
   .owl-carousel .owl-item img.owl-lazy {
     transform-style: preserve-3d; }
 
-/*
- * 	Owl Carousel - Video Plugin
- */
+/* ========== OWL CARROSSEL - VIDEO PLUGIN ========== */
+
 .owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;

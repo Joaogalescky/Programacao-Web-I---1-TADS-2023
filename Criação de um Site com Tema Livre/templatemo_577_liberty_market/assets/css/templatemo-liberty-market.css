@@ -1,4 +1,4 @@
-/* TemplateMo 577 Liberty Market
+/* TemplateMo 577 Liberty Market link:
 https://templatemo.com/tm-577-liberty-market
 */
 
@@ -14,11 +14,11 @@ https://templatemo.com/tm-577-liberty-market
 09. footer
 ----------------------------- */
 
-/* ---- Font & reset css ---- */
+/* ========== FONT & RESET CSS ========== */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
 
-/* ---- Reset ---- */
+/* ========== RESET ========== */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
@@ -101,7 +101,7 @@ img {
   overflow: hidden;
 }
 
-/* -- Estilização Global --- */
+/* ========== ESTILIZAÇÃO GLOBAL ========== */
 html,
 body {
   background: #fff;
@@ -216,7 +216,7 @@ section {
   font-style: normal;
 }
 
-/* ---- Barra de Pesquisa ---- */
+/* ========== BARRA DE PESQUISA ========== */
 
 #searchbar{
   width: 25vw;
@@ -232,7 +232,7 @@ section {
 }
 /*https://www.devmedia.com.br/html5-placeholder-como-estilizar/24589*/
 
-/* ---- Formulário de Envio ---- */
+/* ========== FORMULÁRIO DE ENVIO ========== */
 
 form textarea{
   padding: 10px;
@@ -247,21 +247,21 @@ form textarea:focus{
   border-radius: 15px;
 }
 
-/* ---- Página de Agradecimentos ---- */
+/* ========== PÁGINA DE AGRADECIMENTOS ========== */
 
 .paragrafo{
   margin-top: 15px;
   font-size: 20px;
 }
 
-/* ---- Página Sobre a Empresa ---- */
+/* ========== PÁGINA SOBRE A EMPRESA ========== */
 
 .historia{
   font-size: 18px;
   text-align: justify;
 }
 
-/* ---- Pré carregamento da Estilização ---- */
+/* ========== PRÉ CARREGAMENTO DA ESTILIZAÇÃO ========== */
 
 .js-preloader {
   position: fixed;
@@ -357,7 +357,7 @@ form textarea:focus{
   border-radius: 50%;
 }
 
-/* ---- Header Estilização ---- */
+/* ========== HEADER ESTILIZAÇÃO ========== */
 
 .background-header {
   background-color: #fff !important;
@@ -741,7 +741,7 @@ form textarea:focus{
   }
 }
 
-/* ---- Banner Estilização ---- */
+/* ========== BANNER ESTILIZAÇÃO ========== */
 
 .main-banner {
   background-image: url(../images/banner-bg.jpg);
@@ -821,7 +821,7 @@ form textarea:focus{
   opacity: 1;
 }
 
-/* ---- Categorias & Coleções Estilização ---- */
+/* ========== CATEGORIAS & COLEÇÕES ESTILIZAÇÃO ========== */
 
 .categories-collections {
   background-image: url(../images/dark-bg.jpg);
@@ -995,8 +995,7 @@ form textarea:focus{
   opacity: 1;
 }
 
-
-/* ---- Criar NFT Style ---- */
+/* ========== SOBRE STYLE ========== */
 
 .create-nft {
   background-image: url(../images/main-bg.jpg);
@@ -1086,7 +1085,7 @@ form textarea:focus{
   color: #3CF;
 }
 
-/* ---- Currently Market Style ---- */
+/* ========== ???? STYLE ========== */
 
 .currently-market {
   background-image: url(../images/dark-bg.jpg);
@@ -1220,8 +1219,7 @@ form textarea:focus{
   border-bottom: 1px solid #321cff;
 }
 
-
-/* ---- Footer Style ---- */
+/* ========== FOOTER STYLE ========== */
 
 footer {
   background: rgb(87, 57, 255);
@@ -1245,8 +1243,7 @@ footer p a:hover {
   opacity: 0.75;
 }
 
-
-/* ---- Page Heading Style ---- */
+/* ========== CABEÇALHO DA PÁGINA STYLE ========== */
 
 .normal-space {
   padding: 250px 0px 120px 0px !important;
@@ -1300,9 +1297,7 @@ footer p a:hover {
   margin-left: 15px;
 }
 
-
-
-/* ---- Explore Style ---- */
+/* ========== ???? STYLE ========== */
 
 .featured-explore {
   margin-top: 60px;
@@ -1601,8 +1596,7 @@ footer p a:hover {
   margin-top: 5px;
 }
 
-
-/* ---- Details Page Style ---- */
+/* ========== ????? STYLE ========== */
 
 .item-details-page {
   background-image: url(../images/dark-bg.jpg);
@@ -1831,8 +1825,7 @@ footer p a:hover {
   color: #535eff;
 }
 
-
-/* ---- Estilização da Página Perfil(Profile) --> Antes era Author ---- */
+/* ========== PERFIL STYLE ========== */
 
 .profile-page {
   background-image: url(../images/dark-bg.jpg);
@@ -1966,7 +1959,7 @@ footer p a:hover {
   text-align: center;
 }
 
-/* ---- Create Page Style ---- */
+/* ========== CRIAR STYLE ========== */
 
 #contact {
   background-color: #37393c;
@@ -2010,7 +2003,7 @@ footer p a:hover {
   text-align: center;
 }
 
-/* ---- Responsive Style ---- */
+/* ========== RESPONSIVE STYLE ========== */
 
 body {
   overflow-x: hidden;
