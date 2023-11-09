@@ -821,7 +821,7 @@ form textarea:focus{
   opacity: 1;
 }
 
-/* ========== CATEGORIAS & COLEÇÕES ESTILIZAÇÃO ========== */
+/* ========== CATEGORIAS & COLEÇÕES ESTILIZAÇÃO - PÁG HOME ========== */
 
 .categories-collections {
   background-image: url(../images/dark-bg.jpg);
@@ -980,14 +980,14 @@ form textarea:focus{
 .collections .owl-nav .owl-next span  {
   width: 46px;
   height: 46px;
-  line-height: 46px;
-  font-size: 24px;
+  line-height: 40px;
+  font-size: 50px;
   display: inline-block;
   color: #321cff;
-  background-color: #fff;
+  background-color: rgb(211, 211, 211);
   border-radius: 50%;
   opacity: 1;
-  transition: all .3s;
+  transition: all .4s;
 }
 
 .collections .owl-nav .owl-prev span:hover,
@@ -995,9 +995,9 @@ form textarea:focus{
   opacity: 1;
 }
 
-/* ========== SOBRE STYLE ========== */
+/* ========== BARRA - NOSSAS VANTAGENS - STYLE ========== */
 
-.create-nft {
+.our-advantages {
   background-image: url(../images/main-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1006,32 +1006,32 @@ form textarea:focus{
   position: relative;
 }
 
-.create-nft .section-heading .line-dec {
+.our-advantages .section-heading .line-dec {
   margin-left: 0%;
   background-color: #fff;
 }
 
-.create-nft .section-heading {
+.our-advantages .section-heading {
   text-align: left;
   margin-bottom: 50px;
 }
 
-.create-nft .main-button {
+.our-advantages .main-button {
   text-align: right;
 }
 
-.create-nft .item {
+.our-advantages .item {
   margin-top: 30px;
   position: relative;
 }
 
-.create-nft .first-item .number {
+.our-advantages .first-item .number {
   position: absolute;
   right: 0;
   top: -20px;
 }
 
-.create-nft .first-item:after {
+.our-advantages .first-item:after {
   position: absolute;
   width: 1px;
   height: 95%;
@@ -1041,13 +1041,13 @@ form textarea:focus{
   top: 5%;
 }
 
-.create-nft .second-item .number {
+.our-advantages .second-item .number {
   position: absolute;
   right: 0;
   top: -20px;
 }
 
-.create-nft .second-item:after {
+.our-advantages .second-item:after {
   position: absolute;
   width: 1px;
   height: 95%;
@@ -1067,27 +1067,27 @@ form textarea:focus{
   border-radius: 50%;
 }
 
-.create-nft .item .icon img {
+.our-advantages .item .icon img {
   max-width: 31px;
 }
 
-.create-nft h4 {
+.our-advantages h4 {
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.create-nft p {
+.our-advantages p {
   margin-right: 30px;
 }
 
-.create-nft .item a {
+.our-advantages .item a {
   color: #3CF;
 }
 
 /* ========== ???? STYLE ========== */
 
-.currently-market {
+/* .currently-market {
   background-image: url(../images/dark-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1217,7 +1217,7 @@ form textarea:focus{
   font-weight: 700;
   color: #321cff;
   border-bottom: 1px solid #321cff;
-}
+} */
 
 /* ========== FOOTER STYLE ========== */
 
@@ -1297,7 +1297,7 @@ footer p a:hover {
   margin-left: 15px;
 }
 
-/* ========== ???? STYLE ========== */
+/* ========== EXPLORAR STYLE ========== */
 
 .featured-explore {
   margin-top: 60px;
@@ -1596,9 +1596,10 @@ footer p a:hover {
   margin-top: 5px;
 }
 
-/* ========== ????? STYLE ========== */
+/* ========== SOBRE STYLE PAGE ========== */
 
-.item-details-page {
+/*Página Enviar seu Projeto*/
+ .about-us {
   background-image: url(../images/dark-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1607,111 +1608,227 @@ footer p a:hover {
   position: relative;
 }
 
-.item-details-page:after {
-  background-image: url(/assets/images/category-collection-dec.png);
-  width: 300px;
-  height: 282px;
+/*Página Enviar seu Projeto*/
+.about-us form input::placeholder { 
+  color: #fff;
+}
+
+/*Página Enviar seu Projeto*/
+.about-us button { 
+  font-size: 14px;
+  color: #fff;
+  background-color: #321cff;
+  border: 1px solid #321cff;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  margin-top: 140px;
+}
+
+.collections .item img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.collections .item .down-content {
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 30px;
+}
+
+.collections .item .down-content h4 {
+  font-size: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.collections .item {
+  padding-bottom: 60px;
+}
+
+.collections .item span {
+  color: #fff;
+  display: inline-block;
+  width: 48%;
+  font-size: 15px;
+}
+
+.collections .item span strong {
+  font-size: 20px;
+  color: #321cff;
+}
+
+.collections .item span.category {
+  text-align: right;
+}
+
+.collections .item .main-button a {
+  width: 100%;
+  text-align: center;
+}
+
+.collections .item .main-button {
+  margin-top: 20px;
+  margin-bottom: -60px;
+}
+
+.collections .item .main-button a:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #321cff;
+}
+
+.collections .owl-nav {
   position: absolute;
-  bottom: 0;
-  right: 30px;
-  content: '';
-  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50px);
+  text-align: center;
 }
 
-.item-details-page .left-image {
-  margin-right: 30px;
+.collections .owl-nav .owl-prev {
+  position: absolute;
+  left: -23px;
 }
 
-.item-details-page h4 {
+.collections .owl-nav .owl-next {
+  position: absolute;
+  right: -23px;
+}
+
+.collections .owl-nav .owl-prev span,
+.collections .owl-nav .owl-next span  {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 24px;
+  display: inline-block;
+  color: #321cff;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.collections .owl-nav .owl-prev span:hover,
+.collections .owl-nav .owl-next span:hover {
+  opacity: 1;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.founders {
+  margin-top: 60px;
+}
+
+.founders select { /*Fieldset*/
+  float: right;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.founders .mini-heading h4 { /* Sobre a Program Ask*/
+  background-color: #321cff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 22px;
+}
+
+.founders .item { /* Sobre a Program Ask*/
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #282b2f;
+  border: 1px solid #404245;
+}
+
+.founders .item .left-img { /* Sobre a Program Ask*/
+  flex-basis: 80%;
+  display: inline-flex;
+}
+
+.founders .item .right-content { /* Sobre a Program Ask*/
+  padding: 30px;
+  width: 100%;
+}
+
+.founders .item .right-content h4 { /* Sobre a Program Ask*/
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.founders .item .right-content a { /* Sobre a Program Ask*/
+  font-size: 15px;
+  color: #535eff;
+  font-weight: 700;
+}
+
+.founders .item .right-content .line-dec { /* Sobre a Program Ask*/
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 25px 0px;
+}
+
+.founders .item .right-content h6 { /* Sobre a Program Ask*/
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.founders .item .right-content h6 em { /* Sobre a Program Ask*/
+  font-size: 18px;
+  color: #535eff;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.founders .item .right-content span.date { /* Sobre a Program Ask*/
+  font-size: 15px;
+  color: #535eff;
+}
+
+/* ========== AGRADECIMENTOS PAGE ========== */
+
+.thank-you {
+  background-image: url(../images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;
+  position: relative;
+}
+
+.thank-you h4 {
   font-size: 20px;
   margin-bottom: 25px;
 }
 
-.item-details-page span.author {
-  display: flex;
+.thank-you p {
   margin-bottom: 30px;
 }
 
-.item-details-page span.author img {
-  margin-right: 15px;
-}
-
-.item-details-page span.author h6 {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 25px;
-}
-
-.item-details-page span.author a {
-  color: #321cff;
-  font-weight: 700;
-  margin-top: 5px;
-}
-
-.item-details-page p {
-  margin-bottom: 30px;
-}
-
-.item-details-page span {
-  color: #fff;
-  display: inline-block;
-  font-size: 15px;
-}
-
-.item-details-page span strong {
-  font-size: 20px;
-  color: #321cff;
-}
-
-.item-details-page p {
-  position: relative;
-  z-index: 2;
-}
-
-.item-details-page span.bid,
-.item-details-page span.owner,
-.item-details-page span.ends  {
-  line-height: 35px;
-  position: relative;
-  z-index: 2;
-}
-
-.item-details-page span.bid em,
-.item-details-page span.ends em,
-.item-details-page span.owner em {
-  font-style: normal;
-  color: #afafaf;
-}
-
-.item-details-page form {
-  margin-top: 40px;
-}
-
-
-.item-details-page form label {
-  color: #afafaf;
-  font-size: 15px;
-  font-weight: 500;
-  margin-right: 10px;
-}
-
-.item-details-page form input {
-  width: 100px;
-  height: 46px;
-  border: 1px solid #321cff;
-  outline: none;
-  border-radius: 23px;
-  background-color: transparent;
-  color: #fff;
-  text-align: center;
-  margin-right: 15px;
-}
-
-.item-details-page form input::placeholder {
-  color: #fff;
-}
-
-.item-details-page button {
+.thank-you button {
   font-size: 14px;
   color: #fff;
   background-color: #321cff;
@@ -1725,104 +1842,6 @@ footer p a:hover {
   transition: all .3s;
   position: relative;
   overflow: hidden;
-}
-
-.item-details-page button:after {
-  width: 50%;
-  height: 2px;
-  background-color: #fff;
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-}
-
-.item-details-page button:hover {
-  background-color: #fff;
-  color: #321cff;
-  border: 1px solid #fff;
-}
-
-.current-bid {
-  margin-top: 120px;
-}
-
-.current-bid select {
-  float: right;
-  width: 150px;
-  background-color: transparent;
-  color: #fff;
-  font-weight: 500;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.current-bid .mini-heading h4 {
-  background-color: #321cff;
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px 20px;
-  border-radius: 22px;
-}
-
-.current-bid .item {
-  position: relative;
-  z-index: 2;
-  margin-top: 30px;
-  display: flex;
-  border-radius: 20px;
-  overflow: hidden;
-  background-color: #282b2f;
-  border: 1px solid #404245;
-}
-
-.current-bid .item .left-img {
-  flex-basis: 80%;
-  display: inline-flex;
-}
-
-.current-bid .item .right-content {
-  padding: 30px;
-  width: 100%;
-}
-
-.current-bid .item .right-content h4 {
-  font-size: 20px;
-  margin-bottom: 0px;
-}
-
-.current-bid .item .right-content a {
-  font-size: 15px;
-  color: #535eff;
-  font-weight: 700;
-}
-
-.current-bid .item .right-content .line-dec {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 25px 0px;
-}
-
-.current-bid .item .right-content h6 {
-  font-size: 15px;
-  font-weight: 400;
-  margin-bottom: 8px;
-}
-
-.current-bid .item .right-content h6 em {
-  font-size: 18px;
-  color: #535eff;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.current-bid .item .right-content span.date {
-  font-size: 15px;
-  color: #535eff;
 }
 
 /* ========== PERFIL STYLE ========== */
@@ -1854,9 +1873,9 @@ footer p a:hover {
 .profile-page .right-info {
   background-color: #282b2f;
   border: 1px solid #404245;
-  padding: 30px 30px;
+  padding: 15px 15px;
   border-radius: 20px;
-  margin-left: 200px;
+  margin-left: 150px;
 }
 
 .profile-page .right-info .info-item {
@@ -1864,27 +1883,16 @@ footer p a:hover {
 }
 
 .profile-page .right-info i {
-  color: #321cff;
-  font-size: 22px;
+  color: #4c40f7;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
-.profile-page .right-info h6 {
-  font-size: 20px;
-  color: #321cff;
-  margin-top: 2px;
-}
-
-.profile-page .right-info h6 em {
-  font-size: 15px;
+.profile-page .right-info i em {
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  color: #fff;
-}
-
-.profile-page .right-info h5 {
-  font-size: 20px;
-  color: #afafaf;
-  margin-top: 10px;
+  color: #ffffff;
 }
 
 .profile-page .right-info .main-button a {
@@ -1894,6 +1902,11 @@ footer p a:hover {
 
 .profile-page .section-heading {
   margin-top: 80px;
+  text-align: left;
+}
+
+.profile-page .section-heading h2{
+  margin-top: -25px;
   text-align: left;
 }
 
@@ -2022,18 +2035,18 @@ body {
   .categories .item {
     margin-bottom: 35px;
   }
-  .create-nft .section-heading,
+  .our-advantages .section-heading,
   .currently-market .section-heading {
     text-align: center;
   }
   .currently-market-item {
     width: 100%;
   }
-  .create-nft .section-heading .line-dec,
+  .our-advantages .section-heading .line-dec,
   .currently-market .section-heading .line-dec {
     margin: 0 auto;
   }
-  .create-nft .main-button,
+  .our-advantages .main-button,
   .currently-market .filters {
     text-align: center;
   }
@@ -2041,16 +2054,16 @@ body {
     margin-bottom: 30px;
     margin-top: -30px;
   }
-  .create-nft p {
+  .our-advantages p {
     margin-right: 0px;
   }
-  .create-nft .first-item:after,
-  .create-nft .second-item:after,
-  .create-nft .first-item .number,
-  .create-nft .second-item .number {
+  .our-advantages .first-item:after,
+  .our-advantages .second-item:after,
+  .our-advantages .first-item .number,
+  .our-advantages .second-item .number {
     display: none;
   }
-  .create-nft .item {
+  .our-advantages .item {
     text-align: center;
     margin-top: 45px;
   }
@@ -2064,17 +2077,17 @@ body {
   .top-seller .item h6 {
     font-size: 16px;
   }
-  .item-details-page .left-image {
+  .thank-you .left-image {
     margin-right: 0px;
     margin-bottom: 30px;
   }
-  .current-bid select {
+  .founders select {
     float: none;
   }
-  .author-page .author {
+  .profile-page .author {
     justify-content: center;
   }
-  .author-page .right-info {
+  .profile-page .right-info {
     margin-left: 0px;
     margin-top: 30px;
   }
