@@ -122,7 +122,7 @@ body {
   font-size: 14px;
   color: #fff;
   background-color: transparent;
-  border: 1px solid #321cff;
+  border: 1px solid #313fff;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -146,15 +146,15 @@ body {
 }
 
 .border-button a:hover {
-  background-color: #321cff;
+  background-color: #313fff;
   color: #fff;
 }
 
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #321cff;
-  border: 1px solid #321cff;
+  background-color: #313fff;
+  border: 1px solid #313fff;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -179,7 +179,7 @@ body {
 
 .main-button a:hover {
   background-color: #fff;
-  color: #321cff;
+  color: #313fff;
   border: 1px solid #fff;
 }
 
@@ -1085,140 +1085,6 @@ form textarea:focus{
   color: #3CF;
 }
 
-/* ========== ???? STYLE ========== */
-
-/* .currently-market {
-  background-image: url(../images/dark-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding: 120px 0px;
-  position: relative;
-}
-
-.currently-market-item {
-  width: 45%;
-  margin: 0 auto;
-}
-
-.currently-market .section-heading {
-  text-align: left;
-}
-
-.currently-market .section-heading .line-dec {
-  margin-left: 0;
-}
-
-.currently-market .filters {
-  text-align: right;
-}
-
-.currently-market .filters ul li {
-  display: inline-block;
-  margin-left: 10px;
-  font-size: 15px;
-  color: #fff;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all .3s;
-}
-
-.currently-market .filters ul li:first-child {
-  margin-left: 0px;
-}
-
-
-.currently-market .filters ul li.active,
-.currently-market .filters ul li:hover {
-  background-color: #321cff;
-}
-
-.currently-market .item {
-  background-color: #282b2f;
-  border: 1px solid #404245;
-  border-radius: 20px;
-  padding: 30px;
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.currently-market .item .right-content {
-  margin-left: 30px;
-  width: 100%;
-}
-
-.currently-market .item .right-content h4 {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-.currently-market .item .right-content span.author {
-  display: flex;
-  margin-bottom: 25px;
-}
-
-.currently-market .item .right-content span.author img {
-  margin-right: 15px;
-}
-
-.currently-market .item .right-content span.author h6 {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 25px;
-}
-
-.currently-market .item .right-content span.author a {
-  color: #321cff;
-  font-weight: 700;
-  margin-top: 5px;
-}
-
-.currently-market .item span {
-  color: #fff;
-  display: inline-block;
-  font-size: 15px;
-}
-
-.currently-market .item .line-dec {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin-bottom: 25px;
-  margin-top: 30px;
-}
-
-.currently-market .item span strong {
-  font-size: 20px;
-}
-
-.currently-market .item span.bid {
-  line-height: 35px;
-}
-
-.currently-market .item span.bid em,
-.currently-market .item span.ends em {
-  font-style: normal;
-}
-
-.currently-market .item span.ends {
-  text-align: right;
-  float: right;
-  line-height: 35px;
-}
-
-.currently-market .item .text-button {
-  margin-top: 40px;
-}
-
-.currently-market .item .text-button a {
-  font-size: 15px;
-  font-weight: 700;
-  color: #321cff;
-  border-bottom: 1px solid #321cff;
-} */
-
 /* ========== FOOTER STYLE ========== */
 
 footer {
@@ -1626,6 +1492,13 @@ footer p a:hover {
   text-transform: capitalize;
   letter-spacing: 0.5px;
   margin-top: 140px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.about-us button:hover{
+  background-color: #ffffff;
+  color: #321cff;
 }
 
 .collections .item img {
