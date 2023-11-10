@@ -49,7 +49,16 @@
               <input id="searchbar" type="text" name="searchbar" class="searchText" placeholder="Pesquisar" autocomplete="on" required onkeyup="search()">
               <ul class="nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="explorar.html">Explorar Planos</a></li>
+                <div class="nav-item dropdown">
+                  <li><a href="explorar.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Explorar Planos</a></li>
+                  <div class="dropdown-menu rounded-0 m-0">
+                    <li><a href="plano_gratuito.html" class="dropdown-item">Plano Gratuito</a></li>
+                    <li><a href="plano_standard.html" class="dropdown-item">Plano Standard</a></li>
+                    <li><a href="plano_advanced.html" class="dropdown-item">Plano Advanced</a></li>
+                    <li><a href="plano_premium.html" class="dropdown-item">Plano Premium</a></li>
+                    <li><a href="plano_custom.html" class="dropdown-item">Plano Custom</a></li>
+                  </div>
+                </div>
                 <li><a href="criar.html">Criar Projeto</a></li>
                 <li><a href="perfil.html">Perfil</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
