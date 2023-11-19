@@ -235,7 +235,7 @@ section {
 /* ========== FORMULÁRIO DE ENVIO ========== */
 
 form textarea{
-  padding: 10px;
+  padding: 5px;
   outline: none;
   border: 1;
   font-size: 15px;
@@ -245,6 +245,15 @@ form textarea{
 
 form textarea:focus{
   border-radius: 15px;
+}
+
+#description{
+  width: 37.8rem;
+}
+
+#border{
+  border-radius: 15px;
+  box-shadow: -8px 1px 10px rgba(255, 255, 255, 0.8);
 }
 
 /* ========== PÁGINA DE AGRADECIMENTOS ========== */
@@ -1304,7 +1313,7 @@ footer p a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 400px 0px 120px 0px;
+  padding: 120px 0px 120px 0px;
   position: relative;
 }
 
