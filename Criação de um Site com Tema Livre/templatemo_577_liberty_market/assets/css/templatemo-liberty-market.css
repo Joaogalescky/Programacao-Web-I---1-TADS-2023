@@ -1943,6 +1943,9 @@ body {
   .top-seller .item {
     justify-content: center;
   }
+  .header-area.header-sticky .main-nav #searchbar {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2007,6 +2010,9 @@ body {
   .profile-page .right-info {
     margin-left: 0px;
     margin-top: 30px;
+  }
+  .header-area.header-sticky .main-nav #searchbar {
+    display: none;
   }
 }
 
