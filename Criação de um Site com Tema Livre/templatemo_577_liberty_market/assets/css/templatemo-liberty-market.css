@@ -1210,8 +1210,8 @@ footer p a:hover {
 /* ========== EXPLORAR STYLE ========== */
 
 .featured-explore {
-  margin-top: 60px;
-  margin-bottom: -300px;
+  margin-top: 100px;
+  margin-bottom: -100px;
 }
 
 .featured-explore .owl-features {
@@ -1226,7 +1226,7 @@ footer p a:hover {
 .featured-explore .item .thumb:hover .hover-effect {
   visibility: visible;
   opacity: 1;
-  right: 30px;
+  right: 10px;
 }
 
 .featured-explore .item .thumb .hover-effect {
@@ -1239,32 +1239,33 @@ footer p a:hover {
   background-color: rgba(40, 43, 47, 0.9);
   opacity: 0;
   visibility: hidden;
-  transition: all .5s;
+  transition: all .3s;
 }
 
 .featured-explore .item .hover-effect .content h4 {
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
-.featured-explore .item .hover-effect .content span.author {
+/* .featured-explore .item .hover-effect .content span.author {
   display: flex;
   margin-bottom: 0px;
 }
 
 .featured-explore .item .hover-effect .content span.author img {
   margin-right: 15px;
-}
+} */
 
-.featured-explore .item .hover-effect .content span.author h6 {
+/* .featured-explore .item .hover-effect .content span.author h6 {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
   text-align: left;
-}
+} */
 
 .featured-explore .item .hover-effect .content span.author a {
   color: #321cff;
+  font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
 }
